@@ -25,7 +25,7 @@ full_initials = [(name.split()[0][0], name.split()[1][0]) for name in
 
 almost_numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
-#use a list comprehension to create a list of integers
+# use a list comprehension to create a list of integers
 # from this list of strings
 numbers = [int(number) for number in almost_numbers]
 print(numbers)
