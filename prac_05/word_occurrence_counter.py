@@ -6,5 +6,10 @@ for word in words:
         text_dict[word] += 1
     else:
         text_dict[word] = 1
-for text in text_dict:
-    print("{} : {}".format(text, text_dict[text]))
+
+words = list(text_dict.keys())
+words.sort()
+
+maximum_length = max((len(word) for word in words))
+for word in words:
+    print("{:{}} : {}".format(word, maximum_length, text_dict[word]))
